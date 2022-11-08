@@ -1,0 +1,44 @@
+body {
+    color: aliceblue;
+}
+
+.choice-container {
+    display: felx;
+    margin-bottom: 0.8rem;
+    width: 100%;
+    border-radius: 4px;
+    background: rgb(28, 82, 126);
+    font-size: 3rem;
+    min-width: 80rem;
+}
+
+.choice-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 darkgrey;
+    transform: scale(1.02);
+    transform: transform 100ms;
+}
+
+.choice-prefix {
+    padding: 2rem 2.5rem;
+    color:aliceblue;
+}
+
+.choice-text {
+    padding: 2rem;
+    width: 100%;
+}
+
+.correct {
+    background: linear-gradient (32deg, green);
+}
+
+.incorrect {
+    background: linear-gradient (32deg, red);
+}
+
+@media screem and (max-width: 768px) {
+    .choice-container {
+        min-width: 40 rem;
+    }
+}
