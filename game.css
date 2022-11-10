@@ -1,3 +1,4 @@
+
 body {
     color: aliceblue;
 }
@@ -22,11 +23,13 @@ body {
 .choice-prefix {
     padding: 2rem 2.5rem;
     color:aliceblue;
+    text-align: felx;
 }
 
 .choice-text {
     padding: 2rem;
     width: 100%;
+    text-align: felx;
 }
 
 .correct {
@@ -37,8 +40,38 @@ body {
     background: linear-gradient (32deg, red);
 }
 
+/* Heads up display */
+#hud {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hud-prefix {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.hud-main-text {
+    text-align: center;
+}
+
+#progressBar {
+    width: 20rem;
+    height: 3rem;
+    border: 0.2rem solid green;
+    margin-top: 2rem;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+#progressBarFull {
+    height: 100%;
+    background: green;
+    width: 0%;
+}
+
 @media screem and (max-width: 768px) {
     .choice-container {
-        min-width: 40 rem;
+        min-width: 40rem;
     }
 }
